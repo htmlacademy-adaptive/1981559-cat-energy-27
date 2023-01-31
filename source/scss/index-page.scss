@@ -1,0 +1,16 @@
+.index-page {
+  @media (min-width: $desktop-width) {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 50%;
+      height: 694px;
+      background: linear-gradient( rgba(104, 183, 56, 0.85) 100%, rgba(104, 183, 56, 0.85)100%), url("../img/index/index-background-desktop.jpg");
+      right: 0;
+      top: 0;
+      z-index: -1;
+    }
+  }
+}
