@@ -69,9 +69,130 @@
   </nav>
 </header>
 <main class="main">
-  <h1 class="visually-hidden">
-    Форма заказа.
-  </h1>
+  <header class="inner-catalog-header">
+    <h1 class="inner-catalog-header__title">
+      Подбор программы
+    </h1>
+    <p class="inner-catalog-header__description">
+      Заполните анкету, и мы подберем программу питания для вашего кота
+    </p>
+  </header>
+  <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="post">
+
+    <fieldset class="feedback-form__user">
+      <label class="feedback-form__label" for="feedback-name">ИМЯ*:</label>
+      <input class="feedback-form__input" id="feedback-name" name="feedback-name" type="text" placeholder="Имя" value="барсик" required>
+
+      <label class="feedback-form__label" for="feedback-weight">Вес (кг):*</label>
+      <input class="feedback-form__input" id="feedback-weight" name="feedback-weight" type="number" placeholder="Вес" value="7" required>
+
+      <label class="feedback-form__label" for="feedback-age">Возраст (лет):</label>
+      <input class="feedback-form__input" id="feedback-age" name="feedback-age" placeholder="Возраст" value="7" type="number">
+    </fieldset>
+
+    <fieldset class="feedback-form__radio radio-select">
+      <ul class="radio-select__list">
+        <li class="radio-select__item">
+          <label class="radio-select__label">
+            <input class="visually-hidden radio-select__input" type="radio" name="form-radio" value="weight-loss" checked>
+            <span class="radio-select__mark"></span>
+            Похудение
+          </label>
+        </li>
+        <li class="radio-select__item">
+          <label class="radio-select__label">
+            <input class="visually-hidden radio-select__input" type="radio" name="form-radio" value="weight-gain">
+            <span class="radio-select__mark"></span>
+            Набор массы
+          </label>
+        </li>
+        <li class="radio-select__item">
+          <label class="radio-select__label">
+            <input class="visually-hidden radio-select__input" type="radio" name="form-radio" value="need-advice">
+            <span class="radio-select__mark"></span>
+            Не знаю (Нужен ваш совет)
+          </label>
+        </li>
+      </ul>
+    </fieldset>
+
+    <div class="feedback-form__contact" role="group" aria-describedby="contact-legend">
+      <div class="feedback-form__title-wrapper">
+        <div class="feedback-form__title" id="contact-legend">
+          Контактные данные (владельца кота)
+        </div>
+      </div>
+
+      <label class="feedback-form__label" for="feedback-e-mail">E-mail:*</label>
+      <input class="feedback-form__input" id="feedback-e-mail" name="feedback-e-mail" type="email" placeholder="mail@gmail.com" value="kuklachev@gmail.com" required>
+
+      <label class="feedback-form__label" for="feedback-tel">Телефон:*</label>
+      <input class="feedback-form__input" id="feedback-tel" name="feedback-tel" type="tel" placeholder="8 (123) 123-12-12" value="8 (960) 900-60-90" required>
+    </div>
+
+    <div class="feedback-form__comment" role="group" aria-describedby="comment-legend">
+      <div class="feedback-form__title-wrapper">
+        <div class="feedback-form__title" id="comment-legend">
+          Комментарий
+        </div>
+      </div>
+
+      <label class="visually-hidden" for="user-text">Поле ввода вашего комментария.</label>
+      <textarea class="feedback-form__user-text" id="user-text" name="user-text" placeholder="Расскажите обо всех повадках кота"></textarea>
+
+    </div>
+
+    <div class="feedback-form__additional checkbox-select" role="group" aria-describedby="checkbox-legend">
+      <div class="feedback-form__title-wrapper">
+        <div class="feedback-form__title" id="checkbox-legend">
+          Дополнительно
+        </div>
+      </div>
+      <ul class="checkbox-select__list">
+        <li class="checkbox-select__item">
+          <label class="checkbox-select__label">
+            <input class="visually-hidden checkbox-select__input" type="checkbox" name="additional-checkbox" value="sweetener" checked>
+            <span class="checkbox-select__mark"></span>
+            Cахарозаменитель
+          </label>
+        </li>
+        <li class="checkbox-select__item">
+          <label class="checkbox-select__label">
+            <input class="visually-hidden checkbox-select__input" type="checkbox" name="additional-checkbox" value="water">
+            <span class="checkbox-select__mark"></span>
+            Питьевая вода
+          </label>
+        </li>
+        <li class="checkbox-select__item">
+          <label class="checkbox-select__label">
+            <input class="visually-hidden checkbox-select__input" type="checkbox" name="additional-checkbox" value="milk">
+            <span class="checkbox-select__mark"></span>
+            Молоко
+          </label>
+        </li>
+        <li class="checkbox-select__item">
+          <label class="checkbox-select__label">
+            <input class="visually-hidden checkbox-select__input" type="checkbox" name="additional-checkbox" value="vitamins">
+            <span class="checkbox-select__mark"></span>
+            Витамины
+          </label>
+        </li>
+      </ul>
+    </div>
+
+    <div class="feedback-form__button-container">
+      <button class="feedback-form__button button" type="submit">
+        Отправить заявку
+      </button>
+
+      <span class="feedback-form__description-for-requirements">
+            * — Обязательные поля
+      </span>
+    </div>
+
+  </form>
+
+
 </main>
 <footer class="main-footer">
   <section class="main-footer__header inner-footer-header">
