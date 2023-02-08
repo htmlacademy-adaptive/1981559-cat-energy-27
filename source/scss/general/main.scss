@@ -1,5 +1,18 @@
 .main {
   //sticky footer
   flex-grow: 1;
-  display: none;
+
+  @media (min-width: $desktop-width) {
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 50%;
+      height: 694px;
+      background: linear-gradient( rgba(104, 183, 56, 0.85) 100%, rgba(104, 183, 56, 0.85)100%), url("../img/main/inner-main-header/index-background-desktop.jpg");
+      right: 0;
+      top: 0;
+      z-index: -1;
+    }
+  }
 }
