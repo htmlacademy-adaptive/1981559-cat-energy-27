@@ -1,8 +1,6 @@
 .main-header {
-  display: flex;
-  margin: 10px 20px;
-
   @media (min-width: $tablet-width) {
+    display: flex;
     margin: 0 31px;
   }
 
@@ -13,6 +11,13 @@
 
 .main-header__logo {
   margin-right: auto;
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto 0 0;
+  }
 }
 
 .main-header__logo img {
@@ -37,10 +42,11 @@
 
 // Burger
 .main-header__toggle {
-  margin-top: 13px;
+  position: absolute;
+  right: 19px;
+  top: -30px;
   width: 24px;
   height: 16px;
-  position: relative;
   background-color: transparent;
   border: none;
 
@@ -61,6 +67,8 @@
 }
 
 .main-header__navigation {
+  position: relative;
+
   @media (min-width: $tablet-width) {
     max-width: 70%;
   }
@@ -105,8 +113,9 @@
   @media (max-width: $mobile-width-only) {
     position: absolute;
     left: 0;
-    top: 65px;
+    top: 13px;
     width: 100%;
+    background-color: $white;
   }
 
   @media (min-width: $tablet-width) {
@@ -124,10 +133,13 @@
 }
 
 .main-header__navigation--opened .main-header__list {
-  display: block;
+  @media (max-width: $mobile-width-only) {
+    display: block;
+  }
 }
 
 .main-header__navigation--nojs .main-header__list {
+  position: static;
   display: block;
 }
 
