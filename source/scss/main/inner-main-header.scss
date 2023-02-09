@@ -55,4 +55,12 @@
 .inner-main-header__button {
   width: 100%;
   padding: 11px 12px;
+
+  &:hover {
+    background-color: $dark-green;
+  }
+
+  &:active {
+  color: rgba($white, 0.3);
+}
 }
