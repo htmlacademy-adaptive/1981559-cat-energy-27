@@ -4,6 +4,11 @@
   color: $white;
   padding: 27px 20px;
 
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    padding: 59px 117px 529px;
+  }
+
   //index background mobile
   @media (max-width: $mobile-width-only) {
 
@@ -36,6 +41,17 @@
 .inner-main-header img {
   display: block;
   margin-bottom: 3px;
+  width: 100%;
+  height: 100%;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    min-width: 709px;
+    height: 609px;
+  }
 }
 
 .inner-main-header__title {
@@ -43,6 +59,13 @@
   font-size: 36px;
   line-height: 36px;
   margin: 0 0 25px;
+
+  @media (min-width: $tablet-width) {
+    color: $black;
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 42px;
+  }
 }
 
 .inner-main-header__slogan {
@@ -50,11 +73,25 @@
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    color: $black;
+    font-size: 20px;
+    line-height: 20px;
+    margin-left: 3px;
+    margin-bottom: 48px;
+  }
 }
 
 .inner-main-header__button {
   width: 100%;
   padding: 11px 12px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 244px;
+    margin-left: 4px;
+    padding: 17px 12px;
+  }
 
   &:hover {
     background-color: $dark-green;
