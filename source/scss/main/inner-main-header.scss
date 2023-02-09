@@ -9,6 +9,10 @@
     padding: 59px 117px 529px;
   }
 
+  @media (min-width: $desktop-width) {
+    padding: 53px 790px 529px 189px;
+  }
+
   //index background mobile
   @media (max-width: $mobile-width-only) {
 
@@ -52,6 +56,14 @@
     min-width: 709px;
     height: 609px;
   }
+
+  @media (min-width: $desktop-width) {
+    left: unset;
+    right: 252px;
+    top: -29px;
+    width: 552px;
+    height: 499px;
+  }
 }
 
 .inner-main-header__title {
@@ -65,6 +77,10 @@
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 40px;
   }
 }
 
@@ -81,6 +97,12 @@
     margin-left: 3px;
     margin-bottom: 48px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+    letter-spacing: -1px;
+    word-spacing: -1px;
+  }
 }
 
 .inner-main-header__button {
@@ -91,6 +113,10 @@
     max-width: 244px;
     margin-left: 4px;
     padding: 17px 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
   }
 
   &:hover {
