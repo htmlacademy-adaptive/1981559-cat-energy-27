@@ -1,4 +1,8 @@
 .main-header {
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 12px;
+  }
+
   @media (min-width: $tablet-width) {
     display: flex;
     margin: 0 31px;

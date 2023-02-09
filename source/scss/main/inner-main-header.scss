@@ -1,0 +1,58 @@
+.inner-main-header {
+  position: relative;
+  text-align: center;
+  color: $white;
+  padding: 27px 20px;
+
+  //index background mobile
+  @media (max-width: $mobile-width-only) {
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 302px;
+      background: linear-gradient( rgba(104, 183, 56, 0.85) 100%, rgba(104, 183, 56, 0.85)100%);
+      right: 0;
+      top: 0;
+      z-index: -1;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      right: 0;
+      top: 0;
+      width: 100%;
+      height: 302px;
+      background-image: url("../img/main/inner-main-header/index-background-mobile.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: -2;
+    }
+  }
+}
+
+.inner-main-header img {
+  display: block;
+  margin-bottom: 3px;
+}
+
+.inner-main-header__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  margin: 0 0 25px;
+}
+
+.inner-main-header__slogan {
+  margin: 0 0 29px;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.inner-main-header__button {
+  width: 100%;
+  padding: 11px 12px;
+}

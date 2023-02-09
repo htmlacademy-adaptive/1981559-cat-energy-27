@@ -2,6 +2,7 @@
   //sticky footer
   flex-grow: 1;
 
+  //index background desktop
   @media (min-width: $desktop-width) {
 
     &::before {
