@@ -29,6 +29,11 @@
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .program-selection__description {
@@ -40,14 +45,20 @@
   position: relative;
   padding-bottom: 23px;
 
-  &::before {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 1px;
-    background-color: $grey;
-    left: 0;
-    bottom: 0;
+  @media (max-width: $mobile-width-only) {
+    &::before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 1px;
+      background-color: $grey;
+      left: 0;
+      bottom: 0;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    color: $black;
   }
 }
 
@@ -56,10 +67,12 @@
   text-transform: uppercase;
   text-decoration: none;
   color: $black;
+  display: inline-flex;
+  align-items: center;
 }
 
 .program-selection__link-arrow {
-  margin-left: 18px;
+  margin-left: 22px;
 }
 
 .program-selection__arrow-icon {
