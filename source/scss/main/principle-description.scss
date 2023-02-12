@@ -15,11 +15,12 @@
   list-style-type: none;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 20px;
 }
 
 .principle-description__item {
   position: relative;
+  min-height: 60px;
 
   &::before {
     position: absolute;
