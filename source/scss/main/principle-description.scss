@@ -4,6 +4,10 @@
   @media (min-width: $tablet-width) {
     margin: 0 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 108px;
+  }
 }
 
 .principle-description__title {
@@ -32,6 +36,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 78px;
   }
 }
 
@@ -74,6 +83,10 @@
       top: 10px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 111px 0 74px 0;
+  }
 }
 
 .principle-description__item--leaf::after {
@@ -102,6 +115,9 @@
     z-index: -1;
     top: -41px;
     left: 116px;
+    max-width: 134px;
+    overflow: hidden;
+    letter-spacing: 18px;
   }
 }
 
