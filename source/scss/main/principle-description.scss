@@ -1,5 +1,9 @@
 .principle-description {
   margin: 0 22px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 30px;
+  }
 }
 
 .principle-description__title {
@@ -7,6 +11,13 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 73px;
+    margin-left: 2px;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .principle-description__list {
@@ -16,6 +27,12 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
 }
 
 .principle-description__item {
@@ -39,6 +56,23 @@
     height: 60px;
     left: 0;
     top: 0;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 111px 76px 74px 0;
+
+    &::before {
+      width: 80px;
+      height: 80px;
+    }
+
+    &::after {
+      width: 80px;
+      height: 80px;
+      left: 10px;
+      top: 10px;
+    }
   }
 }
 
@@ -62,4 +96,10 @@
   font-size: 14px;
   line-height: 18px;
   color: $dark-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+  }
 }
