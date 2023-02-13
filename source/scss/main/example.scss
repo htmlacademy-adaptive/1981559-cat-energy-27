@@ -187,6 +187,8 @@
   left: 50%;
   border-radius: 2px;
   transform: translateX(-2px);
+  cursor: pointer;
+  color: #666666;
 
   &::before {
     content: "";
@@ -201,6 +203,25 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: -1;
+  }
+}
+
+.example__slider-control:hover {
+  background-color: $green;
+  color: $green;
+
+  &::before {
+    border-color: $green
+  }
+}
+
+.example__slider-control:active {
+  opacity: 0.6;
+  background-color: $green;
+  color: $green;
+
+  &::before {
+    border-color: $green
   }
 }
 
