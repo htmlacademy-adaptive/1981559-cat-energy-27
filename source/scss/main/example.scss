@@ -45,7 +45,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 146px;
+    margin: 0;
   }
 }
 
@@ -64,6 +64,7 @@
 
   @media (min-width: $desktop-width) {
     max-width: 432px;
+    margin: 0;
   }
 }
 
@@ -77,6 +78,7 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 436px;
+    margin: 0;
   }
 }
 
@@ -89,6 +91,10 @@
 
   @media (min-width: $tablet-width) {
     gap: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
   }
 }
 
@@ -165,6 +171,10 @@
     margin-top: 7px;
     gap: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .example__total-description {
@@ -193,6 +203,10 @@
   @media (min-width: $tablet-width) {
     width: 560px;
     height: 512px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
   }
 }
 
