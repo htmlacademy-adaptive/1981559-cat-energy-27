@@ -33,37 +33,39 @@
 </head>
 <body>
 <header class="main-header">
-  <a class="main-header__logo" href="#">
-    <picture>
-      <source media="(min-width: 1440px)" srcset="img/header/logo-desktop.svg">
-      <source media="(min-width: 768px)" srcset="img/header/logo-tablet.svg">
-      <img src="img/header/logo-mobile.svg" width="192" height="38" alt="Cat energy.">
-    </picture>
-  </a>
-  <nav class="main-header__navigation main-header__navigation--closed main-header__navigation--nojs">
-    <button class="main-header__toggle" type="button">
+  <div class="main-header__container container">
+    <a class="main-header__logo" href="#">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="img/header/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/header/logo-tablet.svg">
+        <img src="img/header/logo-mobile.svg" width="192" height="38" alt="Cat energy.">
+      </picture>
+    </a>
+    <nav class="main-header__navigation main-header__navigation--closed main-header__navigation--nojs">
+      <button class="main-header__toggle" type="button">
       <span class="visually-hidden">
         Открыть меню.
       </span>
-    </button>
-    <ul class="main-header__list">
-      <li class="main-header__item">
-        <a href="#" class="main-header__link main-header__link--selected">
-          Главная
-        </a>
-      </li>
-      <li class="main-header__item">
-        <a href="catalog.html" class="main-header__link">
-          Каталог Продукции
-        </a>
-      </li>
-      <li class="main-header__item">
-        <a href="form.html" class="main-header__link">
-          Подбор Программы
-        </a>
-      </li>
-    </ul>
-  </nav>
+      </button>
+      <ul class="main-header__list">
+        <li class="main-header__item">
+          <a href="#" class="main-header__link main-header__link--selected">
+            Главная
+          </a>
+        </li>
+        <li class="main-header__item">
+          <a href="catalog.html" class="main-header__link">
+            Каталог Продукции
+          </a>
+        </li>
+        <li class="main-header__item">
+          <a href="form.html" class="main-header__link">
+            Подбор Программы
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 </header>
 <main class="main">
   <h1 class="visually-hidden">
