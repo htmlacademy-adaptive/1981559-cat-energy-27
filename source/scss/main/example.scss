@@ -8,6 +8,11 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .example__text {
@@ -15,6 +20,12 @@
   font-size: 14px;
   line-height: 18px;
   font-family: "Lato", "Arial", sans-serif;
+  color: $dark-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .example__list {
@@ -30,6 +41,10 @@
   display: flex;
   justify-content: start;
   flex-direction: column-reverse;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+  }
 }
 
 .example__term {
@@ -45,6 +60,11 @@
   margin-top: -9px;
   padding: 0 2px;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
 
 .example__description {
@@ -56,12 +76,22 @@
   text-align: center;
   border: 1px solid #cdcdcd;
   border-radius: 3px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example__total {
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    text-align: right;
+  }
 }
 
 .example__total {
@@ -73,6 +103,7 @@
   position: relative;
   width: 280px;
   height: 256px;
+  margin: 0 auto;
 }
 
 .example__image {
