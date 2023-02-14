@@ -4,6 +4,10 @@
 
 .location__container {
   margin-right: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 70px;
+  }
 }
 
 .location__wrapper {
@@ -16,6 +20,12 @@
 .location__slogan {
   margin: 0;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+    max-width: 230px;
+  }
 }
 
 .location__address {
@@ -23,6 +33,11 @@
   color: $dark-grey;
   font-style: normal;
   font-size: 14px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    text-align: right;
+  }
 }
 
 .location__container iframe {
