@@ -1,0 +1,30 @@
+.location {
+  line-height: 20px;
+}
+
+.location__container {
+  margin-right: 15px;
+}
+
+.location__wrapper {
+  display: grid;
+  align-items: start;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 26px;
+}
+
+.location__slogan {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.location__address {
+  font-family: "Lato", "Arial", sans-serif;
+  color: $dark-grey;
+  font-style: normal;
+  font-size: 14px;
+}
+
+.location__container iframe {
+  margin-left: -20px;
+}
