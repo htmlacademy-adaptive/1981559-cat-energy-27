@@ -1,12 +1,12 @@
 .principle-description {
-  margin: 0 22px 49px;
+  margin-bottom: 49px;
 
   @media (min-width: $tablet-width) {
-    margin: 0 30px 29px;
+    margin-bottom: 29px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 108px;
+    margin: 0;
   }
 }
 
