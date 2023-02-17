@@ -1,9 +1,15 @@
 .main {
   //sticky footer
   flex-grow: 1;
+
+  @media (max-width: $mobile-width-only) {
+    box-shadow: inset 0 1px #d9d9d9;
+  }
 }
 
 .main--index {
+  box-shadow: none;
+
   //index background desktop
   @media (min-width: $desktop-width) {
 
