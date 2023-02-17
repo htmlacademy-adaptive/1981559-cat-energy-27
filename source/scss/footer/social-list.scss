@@ -7,3 +7,16 @@
   justify-content: center;
   gap: 10px 24px;
 }
+
+.social-list__link {
+  color: #666666;
+
+  :hover {
+    color: $green;
+  }
+
+  :active {
+    color: $green;
+    opacity: 0.3;
+  }
+}
