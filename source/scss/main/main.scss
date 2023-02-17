@@ -1,7 +1,9 @@
 .main {
   //sticky footer
   flex-grow: 1;
+}
 
+.main--index {
   //index background desktop
   @media (min-width: $desktop-width) {
 

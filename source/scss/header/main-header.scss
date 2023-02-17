@@ -193,7 +193,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    color: #ffffff;
     font-size: 20px;
     line-height: 30px;
     margin-top: 17px;
@@ -214,7 +213,15 @@
   @media (min-width: $tablet-width) {
     box-shadow: inset 0 -2px #68b738;
   }
+}
 
+.main-header__link--index {
+  @media (min-width: $desktop-width) {
+    color: #ffffff;
+  }
+}
+
+.main-header__link--selected.main-header__link--index {
   @media (min-width: $desktop-width) {
     box-shadow: inset 0 -2px #ffffff;
   }
