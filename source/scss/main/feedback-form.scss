@@ -1,0 +1,52 @@
+.feedback-form__user {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.feedback-form__user .container--form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    gap: 22px;
+  }
+}
+
+.feedback-form__field-wrapper {
+  display: flex;
+  align-items: baseline;
+  gap: 13px;
+}
+
+.feedback-form__label {
+  line-height: 16px;
+  color: $dark-grey;
+  max-width: 150px;
+  text-transform: uppercase;
+  flex-shrink: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.feedback-form__input {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $dark-grey;
+  border: 1px solid #e7e7e7;
+  border-radius: 0;
+  padding: 8px 20px 10px;
+  flex-grow: 1;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
