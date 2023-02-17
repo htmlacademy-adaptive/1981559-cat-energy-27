@@ -1,0 +1,22 @@
+.social-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 24px;
+}
+
+.social-list__link {
+  color: #666666;
+
+  :hover {
+    color: $green;
+  }
+
+  :active {
+    color: $green;
+    opacity: 0.3;
+  }
+}

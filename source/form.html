@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--  preload-->
+  <link rel="preload" href="css/style.min.css" as="style" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldmedium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Cat Energy</title>
+  <!--  favicons start-->
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="img/favicons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+  <link rel="manifest" href="manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <!--  favicons end-->
+</head>
+<body>
+<h1 class="visually-hidden">
+  Главная страница Cat energy.
+</h1>
+<header class="main-header">
+  <a class="main-header__logo" href="#">
+    <picture>
+      <source media="(min-width: 1440px)" srcset="img/header/logo-desktop.svg">
+      <source media="(min-width: 768px)" srcset="img/header/logo-tablet.svg">
+      <img src="img/header/logo-mobile.svg" width="192" height="38" alt="Cat energy.">
+    </picture>
+  </a>
+  <nav class="main-header__navigation main-header__navigation--closed main-header__navigation--nojs">
+    <button class="main-header__toggle" type="button">
+      <span class="visually-hidden">
+        Открыть меню.
+      </span>
+    </button>
+    <ul class="main-header__list">
+      <li class="main-header__item">
+        <a href="index.html" class="main-header__link">
+          Главная
+        </a>
+      </li>
+      <li class="main-header__item">
+        <a href="catalog.html" class="main-header__link">
+          Каталог Продукции
+        </a>
+      </li>
+      <li class="main-header__item">
+        <a href="#" class="main-header__link main-header__link--selected">
+          Подбор Программы
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+<main class="main">
+  <header class="inner-catalog-header">
+    <h1 class="inner-catalog-header__title">
+      Подбор программы
+    </h1>
+    <p class="inner-catalog-header__description">
+      Заполните анкету, и мы подберем программу питания для вашего кота
+    </p>
+  </header>
+  <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="post">
+
+    <fieldset class="feedback-form__user">
+      <label class="feedback-form__label" for="feedback-name">ИМЯ*:</label>
+      <input class="feedback-form__input" id="feedback-name" name="feedback-name" type="text" placeholder="Имя" value="барсик" required>
+
+      <label class="feedback-form__label" for="feedback-weight">Вес (кг):*</label>
+      <input class="feedback-form__input" id="feedback-weight" name="feedback-weight" type="number" placeholder="Вес" value="7" required>
+
+      <label class="feedback-form__label" for="feedback-age">Возраст (лет):</label>
+      <input class="feedback-form__input" id="feedback-age" name="feedback-age" placeholder="Возраст" value="7" type="number">
+    </fieldset>
+
+    <fieldset class="feedback-form__radio radio-select">
+      <ul class="radio-select__list">
+        <li class="radio-select__item">
+          <label class="radio-select__label">
+            <input class="visually-hidden radio-select__input" type="radio" name="form-radio" value="weight-loss" checked>
+            <span class="radio-select__mark"></span>
+            Похудение
+          </label>
+        </li>
+        <li class="radio-select__item">
+          <label class="radio-select__label">
+            <input class="visually-hidden radio-select__input" type="radio" name="form-radio" value="weight-gain">
+            <span class="radio-select__mark"></span>
+            Набор массы
+          </label>
+        </li>
+        <li class="radio-select__item">
+          <label class="radio-select__label">
+            <input class="visually-hidden radio-select__input" type="radio" name="form-radio" value="need-advice">
+            <span class="radio-select__mark"></span>
+            Не знаю (Нужен ваш совет)
+          </label>
+        </li>
+      </ul>
+    </fieldset>
+
+    <div class="feedback-form__contact" role="group" aria-describedby="contact-legend">
+      <div class="feedback-form__title-wrapper">
+        <div class="feedback-form__title" id="contact-legend">
+          Контактные данные (владельца кота)
+        </div>
+      </div>
+
+      <label class="feedback-form__label" for="feedback-e-mail">E-mail:*</label>
+      <input class="feedback-form__input" id="feedback-e-mail" name="feedback-e-mail" type="email" placeholder="mail@gmail.com" value="kuklachev@gmail.com" required>
+
+      <label class="feedback-form__label" for="feedback-tel">Телефон:*</label>
+      <input class="feedback-form__input" id="feedback-tel" name="feedback-tel" type="tel" placeholder="8 (123) 123-12-12" value="8 (960) 900-60-90" required>
+    </div>
+
+    <div class="feedback-form__comment" role="group" aria-describedby="comment-legend">
+      <div class="feedback-form__title-wrapper">
+        <div class="feedback-form__title" id="comment-legend">
+          Комментарий
+        </div>
+      </div>
+
+      <label class="visually-hidden" for="user-text">Поле ввода вашего комментария.</label>
+      <textarea class="feedback-form__user-text" id="user-text" name="user-text" placeholder="Расскажите обо всех повадках кота"></textarea>
+
+    </div>
+
+    <div class="feedback-form__additional checkbox-select" role="group" aria-describedby="checkbox-legend">
+      <div class="feedback-form__title-wrapper">
+        <div class="feedback-form__title" id="checkbox-legend">
+          Дополнительно
+        </div>
+      </div>
+      <ul class="checkbox-select__list">
+        <li class="checkbox-select__item">
+          <label class="checkbox-select__label">
+            <input class="visually-hidden checkbox-select__input" type="checkbox" name="additional-checkbox" value="sweetener" checked>
+            <span class="checkbox-select__mark"></span>
+            Cахарозаменитель
+          </label>
+        </li>
+        <li class="checkbox-select__item">
+          <label class="checkbox-select__label">
+            <input class="visually-hidden checkbox-select__input" type="checkbox" name="additional-checkbox" value="water">
+            <span class="checkbox-select__mark"></span>
+            Питьевая вода
+          </label>
+        </li>
+        <li class="checkbox-select__item">
+          <label class="checkbox-select__label">
+            <input class="visually-hidden checkbox-select__input" type="checkbox" name="additional-checkbox" value="milk">
+            <span class="checkbox-select__mark"></span>
+            Молоко
+          </label>
+        </li>
+        <li class="checkbox-select__item">
+          <label class="checkbox-select__label">
+            <input class="visually-hidden checkbox-select__input" type="checkbox" name="additional-checkbox" value="vitamins">
+            <span class="checkbox-select__mark"></span>
+            Витамины
+          </label>
+        </li>
+      </ul>
+    </div>
+
+    <div class="feedback-form__button-container">
+      <button class="feedback-form__button button" type="submit">
+        Отправить заявку
+      </button>
+
+      <span class="feedback-form__description-for-requirements">
+            * — Обязательные поля
+      </span>
+    </div>
+
+  </form>
+
+</main>
+<footer class="main-footer">
+  <section class="main-footer__header inner-footer-header">
+    <h2 class="visually-hidden">
+      Приглашение на работу.
+    </h2>
+    <p class="inner-footer-header__slogan">
+      Приглашаем к&nbsp;сотрудничеству дилеров!
+    </p>
+    <address class="inner-footer-header__address">
+      ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+    </address>
+    <noscript>
+      <!--      <img scr="" alt="Карта месторасположения.">-->
+    </noscript>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533238!2d30.32085871601446!3d59.938716481876206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1675268796141!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+  <div class="main-footer__link-container footer-container">
+    <a class="footer-container__logo-link">
+      <span class="visually-hidden">
+        Ссылка-логотип на главную страницу.
+      </span>
+      <!--      svg-->
+    </a>
+    <ul class="footer-container__list social-list">
+      <li class="social-list__item">
+        <a class="social-list__link" href="#">
+          <span class="visually-hidden">
+            Вконтакте.
+          </span>
+          <!--          <svg> </svg>-->
+        </a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__link" href="#">
+          <span class="visually-hidden">
+            YouTube.
+          </span>
+          <!--          <svg> </svg>-->
+        </a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__link" href="#">
+          <span class="visually-hidden">
+            Телеграм.
+          </span>
+          <!--          <svg> </svg>-->
+        </a>
+      </li>
+    </ul>
+    <div class="footer-container__htmlacademy-link htmlacademy-wrapper">
+      <span class="htmlacademy-wrapper__word">HTML Academy</span>
+      <!--      <svg logo-->
+    </div>
+  </div>
+</footer>
+<script src="js/mobile-menu.js"></script>
+</body>
+</html>

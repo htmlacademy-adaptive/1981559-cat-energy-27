@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--  preload-->
+  <link rel="preload" href="css/style.min.css" as="style" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldmedium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Каталог</title>
+  <!--  favicons start-->
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="img/favicons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+  <link rel="manifest" href="manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <!--  favicons end-->
+</head>
+<body>
+<header class="main-header">
+  <a class="main-header__logo" href="#">
+    <picture>
+      <source media="(min-width: 1440px)" srcset="img/header/logo-desktop.svg">
+      <source media="(min-width: 768px)" srcset="img/header/logo-tablet.svg">
+      <img src="img/header/logo-mobile.svg" width="192" height="38" alt="Cat energy.">
+    </picture>
+  </a>
+  <nav class="main-header__navigation main-header__navigation--closed main-header__navigation--nojs">
+    <button class="main-header__toggle" type="button">
+      <span class="visually-hidden">
+        Открыть меню.
+      </span>
+    </button>
+    <ul class="main-header__list">
+      <li class="main-header__item">
+        <a href="index.html" class="main-header__link">
+          Главная
+        </a>
+      </li>
+      <li class="main-header__item">
+        <a href="#" class="main-header__link main-header__link--selected">
+          Каталог Продукции
+        </a>
+      </li>
+      <li class="main-header__item">
+        <a href="form.html" class="main-header__link">
+          Подбор Программы
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+<main class="main">
+  <header class="inner-catalog-header">
+    <h1 class="inner-catalog-header__title">
+      Каталог продукции
+    </h1>
+  </header>
+<section class="product">
+  <h2 class="visually-hidden">
+    Основные продукты.
+  </h2>
+  <ul class="product__list">
+    <li class="product__item">
+      <a class="product__item-link" href="#">
+        <img class="product__image" src="#" alt="Маленькая банка c курицей.">
+        <h3 class="product__title">
+          Cat Energy PRO 500 г
+        </h3>
+      </a>
+      <dl class="product__characteristics">
+        <dt class="product__term">Масса</dt>
+        <dd class="product__description">500 г</dd>
+        <dt class="product__term">Вкус</dt>
+        <dd class="product__description">Курица</dd>
+        <dt class="product__term">Цена</dt>
+        <dd class="product__description">700₽ </dd>
+      </dl>
+      <a class="product__buy-button button" href="#">
+        Заказать
+      </a>
+    </li>
+    <li class="product__item">
+      <a class="product__item-link" href="#">
+        <img class="product__image" src="#" alt="Большая банка с курицей.">
+        <h3 class="product__title">
+          Cat Energy PRO 1000 г
+        </h3>
+      </a>
+      <dl class="product__characteristics">
+        <dt class="product__term">Масса</dt>
+        <dd class="product__description">1000 г</dd>
+        <dt class="product__term">Вкус</dt>
+        <dd class="product__description">Курица</dd>
+        <dt class="product__term">Цена</dt>
+        <dd class="product__description">1000₽ </dd>
+      </dl>
+      <a class="product__buy-button button" href="#">
+        Заказать
+      </a>
+    </li>
+    <li class="product__item">
+      <a class="product__item-link" href="#">
+        <img class="product__image" src="#" alt="Маленькая банка с рыбой.">
+        <h3 class="product__title">
+          Cat Energy PRO 500 г
+        </h3>
+      </a>
+      <dl class="product__characteristics">
+        <dt class="product__term">Масса</dt>
+        <dd class="product__description">500 г</dd>
+        <dt class="product__term">Вкус</dt>
+        <dd class="product__description">Рыба</dd>
+        <dt class="product__term">Цена</dt>
+        <dd class="product__description">700₽ </dd>
+      </dl>
+      <a class="product__buy-button button" href="#">
+        Заказать
+      </a>
+    </li>
+    <li class="product__item">
+      <a class="product__item-link" href="#">
+        <img class="product__image" src="#" alt="Большая банка с рыбой.">
+        <h3 class="product__title">
+          Cat Energy PRO 1000 г
+        </h3>
+      </a>
+      <dl class="product__characteristics">
+        <dt class="product__term">Масса</dt>
+        <dd class="product__description">1000 г</dd>
+        <dt class="product__term">Вкус</dt>
+        <dd class="product__description">Рыба</dd>
+        <dt class="product__term">Цена</dt>
+        <dd class="product__description">1000₽ </dd>
+      </dl>
+      <a class="product__buy-button button" href="#">
+        Заказать
+      </a>
+    </li>
+    <li class="product__item">
+      <a class="product__item-link" href="#">
+        <img class="product__image" src="#" alt="Маленькая банка с гречкой.">
+        <h3 class="product__title">
+          Cat Energy slim 500 г
+        </h3>
+      </a>
+      <dl class="product__characteristics">
+        <dt class="product__term">Масса</dt>
+        <dd class="product__description">500 г</dd>
+        <dt class="product__term">Вкус</dt>
+        <dd class="product__description">Гречка</dd>
+        <dt class="product__term">Цена</dt>
+        <dd class="product__description">400₽ </dd>
+      </dl>
+      <a class="product__buy-button button" href="#">
+        Заказать
+      </a>
+    </li>
+    <li class="product__item">
+      <a class="product__item-link" href="#">
+        <img class="product__image" src="#" alt="Большая банка с гречкой.">
+        <h3 class="product__title">
+          Cat Energy slim 1000 г
+        </h3>
+      </a>
+      <dl class="product__characteristics">
+        <dt class="product__term">Масса</dt>
+        <dd class="product__description">1000 г</dd>
+        <dt class="product__term">Вкус</dt>
+        <dd class="product__description">Гречка</dd>
+        <dt class="product__term">Цена</dt>
+        <dd class="product__description">1000 ₽</dd>
+      </dl>
+      <a class="product__buy-button button" href="#">
+        Заказать
+      </a>
+    </li>
+    <li class="product__item">
+      <a class="product__item-link" href="#">
+        <img class="product__image" src="#" alt="Маленькая банка с рисом.">
+        <h3 class="product__title">
+          Cat Energy slim 500 г
+        </h3>
+      </a>
+      <dl class="product__characteristics">
+        <dt class="product__term">Масса</dt>
+        <dd class="product__description">500 г</dd>
+        <dt class="product__term">Вкус</dt>
+        <dd class="product__description">Рис</dd>
+        <dt class="product__term">Цена</dt>
+        <dd class="product__description">500₽ </dd>
+      </dl>
+      <a class="product__buy-button button" href="#">
+        Заказать
+      </a>
+    </li>
+<!--    Всегда последняя карточка-заглушка -->
+    <li class="product__item">
+      <a class="product__show-more-words" href="#">
+        Показать еще 100500 товаров
+      </a>
+      <p class="product__additional-info">
+        На самом деле вкусов гораздо больше!
+      </p>
+      <a class="product__last-button button" href="#">
+        Показать все
+      </a>
+    </li>
+  </ul>
+</section>
+  <section class="additional-product">
+    <h2 class="additional-product__title">
+      Дополнительные товары
+    </h2>
+    <ul class="additional-product__list">
+      <li class="additional-product__item">
+        <a class="additional-product__item-title">
+          Сахарозаменитель
+        </a>
+
+        <dl class="additional-product__price-list">
+          <dt class="additional-product__amount">
+            1 упаковка (100 г)
+          </dt>
+          <dd class="additional-product__price">
+            200 ₽
+          </dd>
+        </dl>
+
+        <a class="additional-product__buy-button button" href="#">
+          Заказать
+        </a>
+      </li>
+      <li class="additional-product__item">
+        <a class="additional-product__item-title">
+          Сахарозаменитель
+        </a>
+
+        <dl class="additional-product__price-list">
+          <dt class="additional-product__amount">
+            1 упаковка (100 г)
+          </dt>
+          <dd class="additional-product__price">
+            200 ₽
+          </dd>
+        </dl>
+
+        <a class="additional-product__buy-button button" href="#">
+          Заказать
+        </a>
+      </li>
+      <li class="additional-product__item">
+        <a class="additional-product__item-title">
+          Сахарозаменитель
+        </a>
+
+        <dl class="additional-product__price-list">
+          <dt class="additional-product__amount">
+            1 упаковка (100 г)
+          </dt>
+          <dd class="additional-product__price">
+            200 ₽
+          </dd>
+        </dl>
+
+        <a class="additional-product__buy-button button" href="#">
+          Заказать
+        </a>
+      </li>
+      <li class="additional-product__item">
+        <a class="additional-product__item-title">
+          Сахарозаменитель
+        </a>
+
+        <dl class="additional-product__price-list">
+          <dt class="additional-product__amount">
+            1 упаковка (100 г)
+          </dt>
+          <dd class="additional-product__price">
+            200 ₽
+          </dd>
+        </dl>
+
+        <a class="additional-product__buy-button button" href="#">
+          Заказать
+        </a>
+      </li>
+    </ul>
+
+    <div class="additional-product__offer">
+      <p class="additional-product__offer-description">
+        Закажите все и получите чехол для кота в подарок!
+      </p>
+    </div>
+  </section>
+</main>
+<footer class="main-footer">
+  <section class="main-footer__header inner-footer-header">
+    <h2 class="visually-hidden">
+      Приглашение на работу.
+    </h2>
+    <p class="inner-footer-header__slogan">
+      Приглашаем к&nbsp;сотрудничеству дилеров!
+    </p>
+    <address class="inner-footer-header__address">
+      ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+    </address>
+    <noscript>
+      <!--      <img scr="" alt="Карта месторасположения.">-->
+    </noscript>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533238!2d30.32085871601446!3d59.938716481876206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1675268796141!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+  <div class="main-footer__link-container footer-container">
+    <a class="footer-container__logo-link">
+      <span class="visually-hidden">
+        Ссылка-логотип на главную страницу.
+      </span>
+      <!--      svg-->
+    </a>
+    <ul class="footer-container__list social-list">
+      <li class="social-list__item">
+        <a class="social-list__link" href="#">
+          <span class="visually-hidden">
+            Вконтакте.
+          </span>
+          <!--          <svg> </svg>-->
+        </a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__link" href="#">
+          <span class="visually-hidden">
+            YouTube.
+          </span>
+          <!--          <svg> </svg>-->
+        </a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__link" href="#">
+          <span class="visually-hidden">
+            Телеграм.
+          </span>
+          <!--          <svg> </svg>-->
+        </a>
+      </li>
+    </ul>
+    <div class="footer-container__htmlacademy-link htmlacademy-wrapper">
+      <span class="htmlacademy-wrapper__word">HTML Academy</span>
+      <!--      <svg logo-->
+    </div>
+  </div>
+</footer>
+<script src="js/mobile-menu.js"></script>
+</body>
+</html>

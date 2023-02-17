@@ -1,0 +1,19 @@
+.general-button {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $white;
+  background-color: $green;
+  border: none;
+  box-sizing: border-box;
+  padding: 0;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
