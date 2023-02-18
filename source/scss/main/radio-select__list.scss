@@ -6,10 +6,18 @@
   flex-direction: column;
   gap: 19px;
   min-width: 280px;
+
+  @media (min-width: $tablet-width) {
+    gap: 23px;
+  }
 }
 
 .radio-select__item {
   max-width: 240px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 300px;
+  }
 }
 
 .radio-select__label {
@@ -19,6 +27,12 @@
   cursor: pointer;
   position: relative;
   padding-left: 45px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 60px;
+  }
 }
 
 .radio-select__input[type="radio"]:checked + .radio-select__mark::before {
@@ -31,6 +45,11 @@
   border-radius: 50%;
   content: "";
   transform: translate(-50%, -50%);
+
+  @media (min-width: $tablet-width) {
+    width: 18px;
+    height: 18px;
+  }
 }
 
 .radio-select__mark {
@@ -43,6 +62,12 @@
   left: 0;
   top: -3px;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+    top: -6px;
+  }
 }
 
 .radio-select__input[type="radio"]:checked:active + .radio-select__mark::before {

@@ -10,6 +10,10 @@
   padding: 0;
   border: none;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 48px;
+  }
+
   @media (min-width: $desktop-width) {
     grid-column: 1 / 2;
   }
@@ -70,6 +74,14 @@
   grid-column: 2 / 3;
   display: flex;
   justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    box-shadow: none;
+    border: 1px solid #e7e7e7;
+    margin: 0 70px 48px;
+    display: block;
+    padding: 30px 28px 28px;
+  }
 }
 
 .feedback-form__contact {
