@@ -203,3 +203,27 @@
   margin: 0 auto;
   max-width: $desktop-width;
 }
+
+.feedback-form__user-text {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  width: 100%;
+  min-height: 153px;
+  border: 1px solid #e7e7e7;
+  resize: none;
+  box-sizing: border-box;
+  padding: 11px 14px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 9px 19px;
+    min-height: 174px;
+  }
+}
+
+.feedback-form__user-text::placeholder {
+  color: $dark-grey;
+}

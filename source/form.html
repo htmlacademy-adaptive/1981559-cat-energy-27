@@ -145,14 +145,17 @@
 
       <div class="feedback-form__comment" role="group" aria-describedby="comment-legend">
         <div class="feedback-form__title-wrapper">
-          <div class="feedback-form__title" id="comment-legend">
-            Комментарий
+          <div class="feedback-form__title-container">
+            <div class="feedback-form__title" id="comment-legend">
+              Комментарий
+            </div>
           </div>
         </div>
 
-        <label class="visually-hidden" for="user-text">Поле ввода вашего комментария.</label>
-        <textarea class="feedback-form__user-text" id="user-text" name="user-text" placeholder="Расскажите обо всех повадках кота"></textarea>
-
+        <div class="container container--form">
+          <label class="visually-hidden" for="user-text">Поле ввода вашего комментария.</label>
+          <textarea class="feedback-form__user-text" id="user-text" name="user-text" placeholder="Расскажите обо всех повадках кота"></textarea>
+        </div>
       </div>
 
       <div class="feedback-form__additional checkbox-select" role="group" aria-describedby="checkbox-legend">
