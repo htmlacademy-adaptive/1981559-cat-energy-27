@@ -33,37 +33,39 @@
 </head>
 <body>
 <header class="main-header">
-  <a class="main-header__logo" href="#">
-    <picture>
-      <source media="(min-width: 1440px)" srcset="img/header/logo-desktop.svg">
-      <source media="(min-width: 768px)" srcset="img/header/logo-tablet.svg">
-      <img src="img/header/logo-mobile.svg" width="192" height="38" alt="Cat energy.">
-    </picture>
-  </a>
-  <nav class="main-header__navigation main-header__navigation--closed main-header__navigation--nojs">
-    <button class="main-header__toggle" type="button">
+  <div class="main-header__container container">
+    <a class="main-header__logo" href="#">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="img/header/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/header/logo-tablet.svg">
+        <img src="img/header/logo-mobile.svg" width="192" height="38" alt="Cat energy.">
+      </picture>
+    </a>
+    <nav class="main-header__navigation main-header__navigation--closed main-header__navigation--nojs">
+      <button class="main-header__toggle" type="button">
       <span class="visually-hidden">
         Открыть меню.
       </span>
-    </button>
-    <ul class="main-header__list">
-      <li class="main-header__item">
-        <a href="index.html" class="main-header__link">
-          Главная
-        </a>
-      </li>
-      <li class="main-header__item">
-        <a href="#" class="main-header__link main-header__link--selected">
-          Каталог Продукции
-        </a>
-      </li>
-      <li class="main-header__item">
-        <a href="form.html" class="main-header__link">
-          Подбор Программы
-        </a>
-      </li>
-    </ul>
-  </nav>
+      </button>
+      <ul class="main-header__list">
+        <li class="main-header__item">
+          <a href="index.html" class="main-header__link">
+            Главная
+          </a>
+        </li>
+        <li class="main-header__item">
+          <a href="#" class="main-header__link main-header__link--selected">
+            Каталог Продукции
+          </a>
+        </li>
+        <li class="main-header__item">
+          <a href="form.html" class="main-header__link">
+            Подбор Программы
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 </header>
 <main class="main">
   <header class="inner-catalog-header">
@@ -309,59 +311,54 @@
     </div>
   </section>
 </main>
-<footer class="main-footer">
-  <section class="main-footer__header inner-footer-header">
-    <h2 class="visually-hidden">
-      Приглашение на работу.
-    </h2>
-    <p class="inner-footer-header__slogan">
-      Приглашаем к&nbsp;сотрудничеству дилеров!
-    </p>
-    <address class="inner-footer-header__address">
-      ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-    </address>
-    <noscript>
-      <!--      <img scr="" alt="Карта месторасположения.">-->
-    </noscript>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533238!2d30.32085871601446!3d59.938716481876206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1675268796141!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  </section>
-  <div class="main-footer__link-container footer-container">
-    <a class="footer-container__logo-link">
+<footer class="footer">
+  <div class="footer__link-container container">
+    <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__logo-link">
       <span class="visually-hidden">
-        Ссылка-логотип на главную страницу.
+        Ссылка на курсы htmlacdaemy.
       </span>
-      <!--      svg-->
+      <svg width="128" height="24">
+        <use xlink:href="img/sprite.svg#footer-logo"></use>
+      </svg>
     </a>
-    <ul class="footer-container__list social-list">
+    <ul class="footer__list social-list">
       <li class="social-list__item">
-        <a class="social-list__link" href="#">
+        <a href="#" class="social-list__link">
           <span class="visually-hidden">
             Вконтакте.
           </span>
-          <!--          <svg> </svg>-->
+          <svg width="28" height="22">
+            <use xlink:href="img/sprite.svg#vkontakte"></use>
+          </svg>
         </a>
       </li>
       <li class="social-list__item">
-        <a class="social-list__link" href="#">
+        <a href="#" class="social-list__link">
           <span class="visually-hidden">
             YouTube.
           </span>
-          <!--          <svg> </svg>-->
+          <svg width="28" height="22">
+            <use xlink:href="img/sprite.svg#youtube"></use>
+          </svg>
         </a>
       </li>
       <li class="social-list__item">
-        <a class="social-list__link" href="#">
+        <a href="#" class="social-list__link">
           <span class="visually-hidden">
             Телеграм.
           </span>
-          <!--          <svg> </svg>-->
+          <svg width="28" height="22">
+            <use xlink:href="img/sprite.svg#telegram"></use>
+          </svg>
         </a>
       </li>
     </ul>
-    <div class="footer-container__htmlacademy-link htmlacademy-wrapper">
-      <span class="htmlacademy-wrapper__word">HTML Academy</span>
-      <!--      <svg logo-->
-    </div>
+    <a class="footer__htmlacademy-link" href="https://htmlacademy.ru/intensive/adaptive">
+      <span>HTML Academy</span>
+      <svg width="27" height="34">
+        <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
+      </svg>
+    </a>
   </div>
 </footer>
 <script src="js/mobile-menu.js"></script>
