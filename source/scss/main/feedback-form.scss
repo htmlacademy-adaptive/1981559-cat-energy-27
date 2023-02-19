@@ -142,28 +142,44 @@
 }
 
 .feedback-form__field-wrapper--contact {
+  position: relative;
+
   @media (min-width: $tablet-width) {
     gap: 21px;
   }
 }
 
-.feedback-form__input--contact {
-  padding: 10px 42px 9px 11px;
-  background-repeat: no-repeat;
-  background-position: top 12px right 14px;
+.feedback-form__field-wrapper--contact svg {
+  position: absolute;
+  fill: transparent;
+  top: 13px;
+  right: 15px;
+  z-index: -1;
 
   @media (min-width: $tablet-width) {
-    padding-left: 19px;
-    background-position: top 15px right 14px;
+    top: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 18px;
   }
 }
 
-.feedback-form__input--contact[name$="-e-mail"] {
-  background-image: url("../img/main/feedback-form__contact/e-mail-icon.svg");
+.feedback-form__input--contact {
+  padding: 10px 42px 9px 11px;
+  background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 19px;
+  }
 }
 
-.feedback-form__input--contact[name$="-tel"] {
-  background-image: url("../img/main/feedback-form__contact/tel-icon.svg");
+.feedback-form__input--contact:focus-visible + svg {
+  color: #68b738;
+}
+
+.feedback-form__input--contact:invalid + svg {
+  color: #ff8282;
 }
 
 .feedback-form__comment {
