@@ -35,6 +35,14 @@
   }
 }
 
+.radio-select__label:hover .radio-select__mark {
+  border: 1px solid #bababa;
+}
+
+.radio-select__label:disabled .radio-select__mark {
+  opacity: 0.3;
+}
+
 .radio-select__input[type="radio"]:checked + .radio-select__mark::before {
   position: absolute;
   top: 50%;
@@ -70,10 +78,3 @@
   }
 }
 
-.radio-select__input[type="radio"]:checked:active + .radio-select__mark::before {
-  background-color: rgba(51, 51, 51, 0.3);
-}
-
-.radio-select__input[type="radio"]:checked:focus + .radio-select__mark::before {
-  background-color: rgba(51, 51, 51, 0.3);
-}

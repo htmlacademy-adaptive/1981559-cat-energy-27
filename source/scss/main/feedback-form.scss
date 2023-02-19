@@ -69,11 +69,30 @@
   padding: 8px 20px 10px;
   flex-grow: 1;
   width: 100%;
+  outline-offset: -1px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
   }
+}
+
+.feedback-form__input::-webkit-outer-spin-button,
+.feedback-form__input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.feedback-form__input:hover {
+  border-color: #cdcdcd;
+}
+
+.feedback-form__input:focus-visible {
+  outline: 2px solid #444444;
+}
+
+.feedback-form__input:invalid {
+  outline: 2px solid #ff8282;
 }
 
 .feedback-form__radio {
