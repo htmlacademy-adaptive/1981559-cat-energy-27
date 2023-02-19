@@ -22,7 +22,7 @@
   }
 }
 
-.feedback-form__user--container {
+.feedback-form__user-container {
   display: flex;
   flex-direction: column;
   gap: 14px;
@@ -100,8 +100,28 @@
 
 .feedback-form__contact {
   grid-column: 1 / 3;
+  margin-bottom: 24px;
 }
 
+.feedback-form__contact-container {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.feedback-form__input--contact {
+  padding: 10px 42px 9px 11px;
+  background-repeat: no-repeat;
+  background-position: top 12px right 14px;
+}
+
+.feedback-form__input--contact[name$="-e-mail"] {
+  background-image: url("../img/main/feedback-form__contact/e-mail-icon.svg");
+}
+
+.feedback-form__input--contact[name$="-tel"] {
+  background-image: url("../img/main/feedback-form__contact/tel-icon.svg");
+}
 
 .feedback-form__comment {
   grid-column: 1 / 3;
@@ -118,10 +138,12 @@
 .feedback-form__title {
   font-size: 24px;
   line-height: 26px;
-  max-width: 190px;
+  max-width: 221px;
   background-color: $white;
-  padding: 0 10px 0 20px;
+  padding: 0 19px 0 20px;
   margin-bottom: 35px;
+  display: inline-block;
+  box-sizing: border-box;
 }
 
 .feedback-form__title-wrapper {
@@ -134,7 +156,7 @@
     height: 2px;
     background-color: $green;
     left: 0;
-    top: 50%;
+    top: 15px;
     z-index: -1;
   }
 }
