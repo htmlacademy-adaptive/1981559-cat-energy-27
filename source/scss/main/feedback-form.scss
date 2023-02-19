@@ -117,6 +117,12 @@
   @media (min-width: $tablet-width) {
     gap: 21px;
   }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 78px;
+  }
 }
 
 .feedback-form__field-wrapper--contact {
