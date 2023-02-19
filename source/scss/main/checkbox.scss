@@ -7,6 +7,12 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 43px 60px;
+  }
 }
 
 .checkbox__label {
@@ -31,6 +37,14 @@
   content: "";
   transform: translate(-50%, -50%);
   background-image: url("../img/main/checkbox/checkbox-icon.svg");
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    width: 24px;
+    height: 21px;
+    background-size: 24px 19px;
+    background-position-y: 3px;
+  }
 }
 
 .checkbox__mark {
