@@ -167,6 +167,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 58px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 66px;
+  }
 }
 
 .feedback-form__title {
@@ -262,6 +266,11 @@
     flex-wrap: wrap;
     align-items: start;
   }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+    column-gap: 84px;
+  }
 }
 
 .feedback-form__button {
@@ -274,6 +283,10 @@
     font-size: 20px;
     max-width: 282px;
     padding: 16px 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 568px;
   }
 }
 
@@ -289,5 +302,9 @@
     margin-top: 16px;
     margin-left: 4px;
     max-width: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 300px;
   }
 }
