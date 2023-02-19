@@ -20,10 +20,10 @@
 }
 
 .general-button:hover {
-  background-color: #5eaa2f;
+  background-color: $dark-green;
 }
 
 .general-button:active {
-  background-color: #5eaa2f;
+  background-color: $dark-green;
   color: rgba($white, 0.3);
 }

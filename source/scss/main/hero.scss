@@ -141,12 +141,4 @@
   @media (min-width: $desktop-width) {
     margin-left: 0;
   }
-
-  &:hover {
-    background-color: $dark-green;
-  }
-
-  &:active {
-  color: rgba($white, 0.3);
-}
 }
