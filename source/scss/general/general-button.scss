@@ -18,3 +18,12 @@
     line-height: 20px;
   }
 }
+
+.general-button:hover {
+  background-color: #5eaa2f;
+}
+
+.general-button:active {
+  background-color: #5eaa2f;
+  color: rgba($white, 0.3);
+}
