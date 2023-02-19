@@ -154,6 +154,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 64px;
+  }
 }
 
 .feedback-form__additional {
