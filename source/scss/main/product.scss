@@ -4,7 +4,20 @@
   padding: 0;
 }
 
-.product__item-link {
+.product__item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+}
+
+.product__image-link {
+  grid-column: 1 / 2;
+  grid-row: span 2;
+  margin: 0 auto;
+}
+
+.product__title-link {
+  grid-column: 2 / 3;
   text-decoration: none;
 }
 
@@ -23,9 +36,16 @@
   font-size: 12px;
   line-height: 16px;
   color: $dark-grey;
+  grid-column: 2 / 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
 }
 
 .product__description {
   margin: 0;
 }
 
+.product__buy-button {
+  grid-column: 1 / 3;
+}
