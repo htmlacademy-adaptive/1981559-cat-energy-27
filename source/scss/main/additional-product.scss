@@ -143,6 +143,7 @@
 
 .additional-product__offer {
   box-sizing: border-box;
+  margin-bottom: 35px;
   padding: 43px;
   display: flex;
   flex-direction: column;
@@ -152,7 +153,7 @@
   background-image: url("../img/main/additional-product/icon-gift.svg"), linear-gradient( rgba(104, 183, 56, 0.85) 100%, rgba(104, 183, 56, 0.85)100%), url("../img/main/additional-product/product-background-mobile.jpg");
   background-repeat: no-repeat;
   background-size: 78px 80px, auto, auto;
-  background-position: center 59px, 0, 0;
+  background-position: center 59px, 0, top;
 
   @media (min-resolution: 2dppx) {
     background-image: linear-gradient( rgba(104, 183, 56, 0.85) 100%, rgba(104, 183, 56, 0.85)100%), url("../img/main/additional-product/product-background-mobile@2x.jpg");
