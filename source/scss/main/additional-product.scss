@@ -99,6 +99,10 @@
     max-width: 413px;
     padding: 0 37px 0 37px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 73px;
+  }
 }
 
 .additional-product__buy-button {
