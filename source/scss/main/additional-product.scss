@@ -165,7 +165,7 @@
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/main/additional-product/icon-gift.svg"), linear-gradient( rgba(104, 183, 56, 0.85) 100%, rgba(104, 183, 56, 0.85)100%), url("../img/main/additional-product/product-background-mobile@2x.jpg");
-    background-size: auto 290px;
+    background-size: 78px 80px, auto, 290px auto;
   }
 
   @media (min-width: $tablet-width) {
@@ -175,7 +175,7 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/main/additional-product/icon-gift.svg"), linear-gradient( rgba(104, 183, 56, 0.85) 100%, rgba(104, 183, 56, 0.85)100%), url("../img/main/additional-product/product-background-tablet@2x.jpg");
-      background-size: auto 200px;
+      background-size: 78px 80px, auto, auto 200px;
     }
   }
 
