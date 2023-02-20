@@ -142,9 +142,17 @@
 }
 
 .additional-product__offer {
-  height: 290px;
-  background-image: linear-gradient( rgba(104, 183, 56, 0.85) 100%, rgba(104, 183, 56, 0.85)100%), url("../img/main/additional-product/product-background-mobile.jpg");
+  box-sizing: border-box;
+  padding: 43px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  min-height: 290px;
   background-color: #4f4e53;
+  background-image: url("../img/main/additional-product/icon-gift.svg"), linear-gradient( rgba(104, 183, 56, 0.85) 100%, rgba(104, 183, 56, 0.85)100%), url("../img/main/additional-product/product-background-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: 78px 80px, auto, auto;
+  background-position: center 59px, 0, 0;
 
   @media (min-resolution: 2dppx) {
     background-image: linear-gradient( rgba(104, 183, 56, 0.85) 100%, rgba(104, 183, 56, 0.85)100%), url("../img/main/additional-product/product-background-mobile@2x.jpg");
@@ -177,4 +185,5 @@
   color: #ffffff;
   text-align: center;
   max-width: 161px;
+  margin: 0;
 }
