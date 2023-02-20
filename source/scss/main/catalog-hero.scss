@@ -10,6 +10,10 @@
     box-shadow: none;
     margin-bottom: 87px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 70px;
+  }
 }
 
 .catalog-hero__title {
@@ -22,5 +26,9 @@
     font-size: 60px;
     line-height: 60px;
     margin-top: 59px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 18px;
   }
 }
