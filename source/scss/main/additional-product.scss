@@ -22,6 +22,10 @@
     grid-template-columns: 1fr 240px;
     gap: 21px 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .additional-product__item-title {
@@ -112,6 +116,10 @@
 
   @media (min-width: $tablet-width) {
     grid-column: span 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 3 / 4;
   }
 }
 
