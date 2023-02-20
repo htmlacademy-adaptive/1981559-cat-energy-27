@@ -145,7 +145,7 @@
   box-sizing: border-box;
   padding: 43px;
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   align-items: center;
   min-height: 290px;
   background-color: #4f4e53;
@@ -185,5 +185,5 @@
   color: #ffffff;
   text-align: center;
   max-width: 161px;
-  margin: 0;
+  margin: 144px 0 0;
 }
