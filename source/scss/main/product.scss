@@ -88,14 +88,17 @@
   line-height: 16px;
   color: $dark-grey;
   grid-column: 2 / 3;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: start;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 16px;
   }
+}
+
+.product__characteristics-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
 }
 
 .product__description {
