@@ -39,7 +39,7 @@
     height: 2px;
     background-color: #68b738;
     left: 0;
-    top: 15px;
+    top: 50%;
     z-index: -1;
   }
 }
@@ -58,6 +58,14 @@
   padding: 0 22px 0 20px;
   display: inline-block;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-left: 30px;
+    max-width: 413px;
+    padding: 0 37px 0 37px;
+  }
 }
 
 .additional-product__buy-button {
