@@ -1,4 +1,5 @@
 .additional-product__list {
+  margin-bottom: 34px;
   padding: 14px 0 0;
   list-style-type: none;
   box-shadow: inset 0 1px #cdcdcd;
@@ -138,4 +139,42 @@
   @media (min-width: $tablet-width) {
     max-width: 120px;
   }
+}
+
+.additional-product__offer {
+  height: 290px;
+  background-image: linear-gradient( rgba(104, 183, 56, 0.85) 100%, rgba(104, 183, 56, 0.85)100%), url("../img/main/additional-product/product-background-mobile.jpg");
+  background-color: #4f4e53;
+
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient( rgba(104, 183, 56, 0.85) 100%, rgba(104, 183, 56, 0.85)100%), url("../img/main/additional-product/product-background-mobile@2x.jpg");
+    background-size: auto 290px;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: linear-gradient( rgba(104, 183, 56, 0.85) 100%, rgba(104, 183, 56, 0.85)100%), url("../img/main/additional-product/product-background-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient( rgba(104, 183, 56, 0.85) 100%, rgba(104, 183, 56, 0.85)100%), url("../img/main/additional-product/product-background-tablet@2x.jpg");
+      background-size: auto 200px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: linear-gradient( rgba(104, 183, 56, 0.85) 100%, rgba(104, 183, 56, 0.85)100%), url("../img/main/additional-product/product-background-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient( rgba(104, 183, 56, 0.85) 100%, rgba(104, 183, 56, 0.85)100%), url("../img/main/additional-product/product-background-desktop@2x.jpg");
+      background-size: auto 289px;
+    }
+  }
+
+}
+
+.additional-product__offer-description {
+  font-family: "Lato", "Arial", sans-serif;
+  line-height: 20px;
+  color: #ffffff;
+  text-align: center;
+  max-width: 161px;
 }
