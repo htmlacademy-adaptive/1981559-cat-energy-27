@@ -171,6 +171,10 @@
   @media (min-width: $tablet-width) {
     max-width: 120px;
   }
+
+  @media (min-width: $desktop-width) {
+    min-width: 41px;
+  }
 }
 
 .additional-product__offer {
@@ -203,6 +207,11 @@
   }
 
   @media (min-width: $desktop-width) {
+    box-sizing: border-box;
+    padding: 30px 20px 43px 18px;
+    min-width: 245px;
+    background-position: center 56px, 0, top;
+    background-size: 78px 80px, auto, auto;
     background-image: url("../img/main/additional-product/icon-gift.svg"), linear-gradient( rgba(104, 183, 56, 0.85) 100%, rgba(104, 183, 56, 0.85)100%), url("../img/main/additional-product/product-background-desktop.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -225,6 +234,11 @@
     margin: 27px 81px 0 auto;
     text-align: left;
   }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+    margin: 155px 0 0;
+  }
 }
 
 .additional-product__content-wrapper {
@@ -235,5 +249,6 @@
     margin: 0 auto;
     padding: 0 110px 0 110px;
     max-width: $desktop-width;
+    box-sizing: border-box;
   }
 }
