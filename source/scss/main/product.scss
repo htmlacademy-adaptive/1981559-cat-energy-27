@@ -49,12 +49,12 @@
     flex-direction: column;
     align-items: stretch;
     justify-content: start;
-    background-image: linear-gradient(180deg, rgba(255,255,255,1) 76px, rgba(255,255,255,0) 0);
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 1) 76px, rgba(255, 255, 255, 0) 0);
     padding: 0 40px 38px;
   }
 
   @media (min-width: $desktop-width) {
-    background-image: linear-gradient(180deg, rgba(255,255,255,1) 92px, rgba(255,255,255,0) 0);
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 1) 92px, rgba(255, 255, 255, 0) 0);
   }
 }
 

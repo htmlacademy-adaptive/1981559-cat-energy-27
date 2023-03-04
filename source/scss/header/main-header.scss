@@ -144,7 +144,7 @@
 }
 
 .main-header__navigation--nojs .main-header__list {
-  @media (max-width: $mobile-width-only){
+  @media (max-width: $mobile-width-only) {
     position: static;
     display: block;
     margin-left: -20px;

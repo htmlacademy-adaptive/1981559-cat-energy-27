@@ -124,7 +124,7 @@
   line-height: 24px;
   margin: 0;
   max-width: 268px;
-  background-color: #fff;
+  background-color: $white;
   padding: 0 22px 0 20px;
   display: inline-block;
   box-sizing: border-box;
@@ -191,24 +191,24 @@
   min-height: 290px;
   max-width: 280px;
   background-color: #4f4e53;
-  background-image: url("../img/main/additional-product/icon-gift.svg"), linear-gradient( rgba(104, 183, 56, 0.85) 100%, rgba(104, 183, 56, 0.85)100%), url("../img/main/additional-product/product-background-mobile.jpg");
+  background-image: url("../img/main/additional-product/icon-gift.svg"), linear-gradient(rgba(104, 183, 56, 0.85) 100%, rgba(104, 183, 56, 0.85) 100%), url("../img/main/additional-product/product-background-mobile.jpg");
   background-repeat: no-repeat;
   background-size: 78px 80px, auto, auto;
   background-position: center 59px, 0, top;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/main/additional-product/icon-gift.svg"), linear-gradient( rgba(104, 183, 56, 0.85) 100%, rgba(104, 183, 56, 0.85)100%), url("../img/main/additional-product/product-background-mobile@2x.jpg");
+    background-image: url("../img/main/additional-product/icon-gift.svg"), linear-gradient(rgba(104, 183, 56, 0.85) 100%, rgba(104, 183, 56, 0.85) 100%), url("../img/main/additional-product/product-background-mobile@2x.jpg");
     background-size: 78px 80px, auto, 290px auto;
   }
 
   @media (min-width: $tablet-width) {
     min-height: 200px;
     max-width: 707px;
-    background-image: url("../img/main/additional-product/icon-gift.svg"), linear-gradient( rgba(104, 183, 56, 0.85) 100%, rgba(104, 183, 56, 0.85)100%), url("../img/main/additional-product/product-background-tablet.jpg");
+    background-image: url("../img/main/additional-product/icon-gift.svg"), linear-gradient(rgba(104, 183, 56, 0.85) 100%, rgba(104, 183, 56, 0.85) 100%), url("../img/main/additional-product/product-background-tablet.jpg");
     background-position: left 79px top 59px, 0, top;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/main/additional-product/icon-gift.svg"), linear-gradient( rgba(104, 183, 56, 0.85) 100%, rgba(104, 183, 56, 0.85)100%), url("../img/main/additional-product/product-background-tablet@2x.jpg");
+      background-image: url("../img/main/additional-product/icon-gift.svg"), linear-gradient(rgba(104, 183, 56, 0.85) 100%, rgba(104, 183, 56, 0.85) 100%), url("../img/main/additional-product/product-background-tablet@2x.jpg");
       background-size: 78px 80px, auto, auto 200px;
     }
   }
@@ -219,15 +219,14 @@
     min-width: 245px;
     background-position: center 56px, 0, top;
     background-size: 78px 80px, auto, auto;
-    background-image: url("../img/main/additional-product/icon-gift.svg"), linear-gradient( rgba(104, 183, 56, 0.85) 100%, rgba(104, 183, 56, 0.85)100%), url("../img/main/additional-product/product-background-desktop.jpg");
+    background-image: url("../img/main/additional-product/icon-gift.svg"), linear-gradient(rgba(104, 183, 56, 0.85) 100%, rgba(104, 183, 56, 0.85) 100%), url("../img/main/additional-product/product-background-desktop.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/main/additional-product/icon-gift.svg"), linear-gradient( rgba(104, 183, 56, 0.85) 100%, rgba(104, 183, 56, 0.85)100%), url("../img/main/additional-product/product-background-desktop@2x.jpg");
+      background-image: url("../img/main/additional-product/icon-gift.svg"), linear-gradient(rgba(104, 183, 56, 0.85) 100%, rgba(104, 183, 56, 0.85) 100%), url("../img/main/additional-product/product-background-desktop@2x.jpg");
       //background-size: auto 289px;
       background-size: 78px 80px, auto, auto 289px;
     }
   }
-
 }
 
 .additional-product__offer-description {
