@@ -111,7 +111,7 @@
   margin: 0;
 }
 
-.location iframe {
+.location__map {
   display: block;
   margin: 0 auto;
   width: 100%;
@@ -119,6 +119,15 @@
   @media (min-width: $tablet-width) {
     height: 400px;
   }
+}
+
+.location__map-img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.location__map--nojs {
+  display: none;
 }
 
 .location noscript {
