@@ -1,0 +1,347 @@
+.feedback-form {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    align-items: start;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.feedback-form__user {
+  margin: 0;
+  padding: 0;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+    width: 720px;
+    justify-self: end;
+    margin-bottom: 45px;
+  }
+}
+
+.feedback-form__user-container {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    gap: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 40px;
+  }
+}
+
+.feedback-form__field-wrapper {
+  display: flex;
+  align-items: baseline;
+  gap: 13px;
+}
+
+.feedback-form__label {
+  line-height: 16px;
+  color: $dark-grey;
+  max-width: 93px;
+  text-transform: uppercase;
+  flex-shrink: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 120px;
+  }
+}
+
+.feedback-form__input {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $dark-grey;
+  border: 1px solid #e7e7e7;
+  border-radius: 0;
+  padding: 8px 20px 10px;
+  flex-grow: 1;
+  width: 100%;
+  outline-offset: -1px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.feedback-form__input::-webkit-outer-spin-button,
+.feedback-form__input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.feedback-form__input:hover {
+  border-color: #cdcdcd;
+}
+
+.feedback-form__input:focus-visible {
+  outline: 2px solid #444444;
+}
+
+.feedback-form__input:invalid {
+  outline: 2px solid #ff8282;
+}
+
+.feedback-form__radio {
+  margin: 0 0 26px;
+  padding: 26px 20px 22px;
+  border: none;
+  box-shadow: inset 0 1px #e7e7e7, inset 0 -1px #e7e7e7;
+  grid-column: 2 / 3;
+
+  @media (min-width: $tablet-width) {
+    box-shadow: none;
+    border: 1px solid #e7e7e7;
+    margin: 0 70px 75px;
+    padding: 30px 28px 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 45px 40px;
+    width: 570px;
+    box-sizing: border-box;
+  }
+}
+
+.feedback-form__contact {
+  grid-column: 1 / 3;
+  margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 66px;
+  }
+}
+
+.feedback-form__contact-container {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
+  @media (min-width: $tablet-width) {
+    gap: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 78px;
+  }
+}
+
+.feedback-form__field-wrapper--contact {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    gap: 21px;
+  }
+}
+
+.feedback-form__field-wrapper--contact svg {
+  position: absolute;
+  fill: transparent;
+  top: 13px;
+  right: 15px;
+  z-index: -1;
+
+  @media (min-width: $tablet-width) {
+    top: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 18px;
+  }
+}
+
+.feedback-form__input--contact {
+  padding: 10px 42px 9px 11px;
+  background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 19px;
+  }
+}
+
+.feedback-form__input--contact:focus-visible + svg {
+  color: #68b738;
+}
+
+.feedback-form__input--contact:invalid + svg {
+  color: #ff8282;
+}
+
+.feedback-form__comment {
+  grid-column: 1 / 3;
+  margin-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 64px;
+  }
+}
+
+.feedback-form__additional {
+  grid-column: 1 / 3;
+  margin-bottom: 41px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 66px;
+  }
+}
+
+.feedback-form__title {
+  font-size: 24px;
+  line-height: 26px;
+  max-width: 221px;
+  background-color: $white;
+  padding: 0 19px 0 20px;
+  margin-bottom: 35px;
+  display: inline-block;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    max-width: 593px;
+    margin-left: 30px;
+    margin-bottom: 76px;
+    padding: 0 40px 0 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 70px;
+  }
+}
+
+.feedback-form__title-wrapper {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: $green;
+    left: 0;
+    top: 15px;
+    z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      top: 22px;
+    }
+  }
+}
+
+.feedback-form__title-container {
+  margin: 0 auto;
+  max-width: $desktop-width;
+}
+
+.feedback-form__user-text {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  width: 100%;
+  min-height: 153px;
+  border: 1px solid #e7e7e7;
+  resize: none;
+  box-sizing: border-box;
+  padding: 11px 14px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 9px 19px;
+    min-height: 174px;
+  }
+}
+
+.feedback-form__user-text::placeholder {
+  color: $dark-grey;
+}
+
+.feedback-form__title--additional {
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 62px;
+  }
+}
+
+.feedback-form__button-container {
+  grid-column: 1 / 3;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  margin-bottom: 31px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    gap: 20px 65px;
+    flex-wrap: wrap;
+    align-items: start;
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+    column-gap: 84px;
+    margin-bottom: 80px;
+  }
+}
+
+.feedback-form__button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    max-width: 282px;
+    padding: 16px 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 568px;
+  }
+}
+
+.feedback-form__require {
+  font-family: "Lato", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  align-self: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    align-self: start;
+    margin-top: 16px;
+    margin-left: 4px;
+    max-width: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 300px;
+  }
+}

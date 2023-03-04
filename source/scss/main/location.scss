@@ -7,8 +7,20 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 1440px;
     margin: 0 auto 68px;
+  }
+}
+
+.location--other-page {
+  background-color: #f2f2f2;
+  padding-top: 26px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
   }
 }
 
@@ -21,6 +33,7 @@
 
   @media (min-width: $desktop-width) {
     position: relative;
+    margin: 0 auto;
   }
 }
 
@@ -41,7 +54,7 @@
     background-color: $white;
     position: absolute;
     top: 96px;
-    left: 40px;
+    left: 110px;
     margin: 0;
     padding: 20px 2px 20px 80px;
     align-items: center;
@@ -98,15 +111,23 @@
   margin: 0;
 }
 
-.location iframe {
+.location__map {
   display: block;
   margin: 0 auto;
   width: 100%;
-  max-width: $desktop-width;
 
   @media (min-width: $tablet-width) {
     height: 400px;
   }
+}
+
+.location__map-img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.location__map--nojs {
+  display: none;
 }
 
 .location noscript {

@@ -12,3 +12,13 @@
     box-sizing: border-box;
   }
 }
+
+.container--form {
+  @media (min-width: $tablet-width) {
+    margin: 0 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+  }
+}
