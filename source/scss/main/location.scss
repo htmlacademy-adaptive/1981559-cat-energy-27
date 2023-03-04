@@ -7,7 +7,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 1440px;
     margin: 0 auto 68px;
   }
 }
@@ -34,6 +33,7 @@
 
   @media (min-width: $desktop-width) {
     position: relative;
+    margin: 0 auto;
   }
 }
 
@@ -54,7 +54,7 @@
     background-color: $white;
     position: absolute;
     top: 96px;
-    left: 40px;
+    left: 110px;
     margin: 0;
     padding: 20px 2px 20px 80px;
     align-items: center;
@@ -115,7 +115,6 @@
   display: block;
   margin: 0 auto;
   width: 100%;
-  max-width: $desktop-width;
 
   @media (min-width: $tablet-width) {
     height: 400px;
