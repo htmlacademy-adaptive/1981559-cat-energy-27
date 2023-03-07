@@ -60,6 +60,11 @@
   }
 }
 
+.checkbox__input:focus-visible + .checkbox__mark {
+  outline: 2px solid $green;
+  outline-offset: 5px;
+}
+
 .checkbox__mark {
   width: 30px;
   height: 30px;

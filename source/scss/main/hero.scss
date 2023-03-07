@@ -130,11 +130,13 @@
 .hero__button {
   width: 100%;
   padding: 11px 12px;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     max-width: 244px;
     margin-left: 3px;
     padding: 17px 12px;
+    margin-bottom: 30px;
   }
 
   @media (min-width: $desktop-width) {
