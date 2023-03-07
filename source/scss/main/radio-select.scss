@@ -60,6 +60,11 @@
   }
 }
 
+.radio-select__input:focus-visible + .radio-select__mark {
+  outline: 2px solid $green;
+  outline-offset: 3px;
+}
+
 .radio-select__mark {
   width: 30px;
   height: 30px;
